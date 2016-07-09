@@ -292,20 +292,51 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\MenuBuilderServiceProvider::class,
 
-        Sroutier\EloquentLDAP\Providers\EloquentLDAPServiceProvider::class,
+        Tylercd100\LERN\LERNServiceProvider::class,
 
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Laracasts\Flash\FlashServiceProvider::class,
+
         YAAP\Theme\ThemeServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         Zofe\Rapyd\RapydServiceProvider::class,
         Baum\Providers\BaumServiceProvider::class,
-        Sroutier\L51ESKModules\ModulesServiceProvider::class,
         Mgallegos\LaravelJqgrid\LaravelJqgridServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
-        Tylercd100\LERN\LERNServiceProvider::class,
+
+        Yajra\Datatables\DatatablesServiceProvider::class,
+        Mews\Purifier\PurifierServiceProvider::class,
+        'Jenssegers\Date\DateServiceProvider',
+        Caffeinated\Modules\ModulesServiceProvider::class,
+        Caffeinated\Menus\MenusServiceProvider::class,
+        Caffeinated\Flash\FlashServiceProvider::class,
+        Caffeinated\Widgets\WidgetsServiceProvider::class,
+
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
+        Cviebrock\EloquentTaggable\ServiceProvider::class,
+        Cviebrock\LaravelElasticsearch\ServiceProvider::class,
+
+        Roumen\Sitemap\SitemapServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        'Maatwebsite\Sidebar\SidebarServiceProvider',
+        BackupManager\Laravel\Laravel5ServiceProvider::class,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     ],
 
@@ -357,16 +388,33 @@ return [
 
         'Form'        => Collective\Html\FormFacade::class,
         'Html'        => Collective\Html\HtmlFacade::class,
+
+
         'Debugbar'    => Barryvdh\Debugbar\Facade::class,
         'Flash'       => Laracasts\Flash\Flash::class,
         'Theme'       => YAAP\Theme\Facades\Theme::class,
         'Entrust'     => Zizaco\Entrust\EntrustFacade::class,
         'MenuBuilder' => App\Facades\MenuBuilderFacade::class,
-        'Module'      => Sroutier\L51ESKModules\Facades\Module::class,
+        'Module' => Caffeinated\Modules\Facades\Module::class,
         'GridRender'  => Mgallegos\LaravelJqgrid\Facades\GridRender::class,
         'GridEncoder' => Mgallegos\LaravelJqgrid\Facades\GridEncoder::class,
         'Gravatar'    => Creativeorange\Gravatar\Facades\Gravatar::class,
         'LERN'        => Tylercd100\LERN\Facades\LERN::class,
+
+        'Datatables'  => Yajra\Datatables\Facades\Datatables::class,
+        'Purifier'    => Mews\Purifier\Facades\Purifier::class,
+        'Date'        => Jenssegers\Date\Date::class,
+        'Menu'        => Caffeinated\Menus\Facades\Menu::class,
+        'Flash'       => Caffeinated\Flash\Facades\Flash::class,
+        'Widget'      => Caffeinated\Widgets\Facades\Widget::class,
+        'Elasticsearch' => Cviebrock\LaravelElasticsearch\Facade::class,
+        'Excel'       => Maatwebsite\Excel\Facades\Excel::class,
+
+
+
+
+
+
 
     ],
 

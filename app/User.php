@@ -12,11 +12,10 @@ use App\Models\Role;
 use App\Traits\UserHasPermissionsTrait;
 use Auth;
 use Config;
-use Sroutier\EloquentLDAP\Contracts\EloquentLDAPUserInterface;
 use Mail;
 use App\Models\Error;
 
-class User extends Model implements AuthenticatableContract, CanResetPasswordContract, EloquentLDAPUserInterface
+class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
     use Authenticatable, CanResetPassword;
     use EntrustUserTrait, UserHasPermissionsTrait {
